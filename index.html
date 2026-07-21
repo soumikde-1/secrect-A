@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Avinandan</title>
+    <title>Happy Birthday Sumana</title>
+    <!-- Fonts added: Dancing Script (Handwritten), Playfair, Poppins, Share Tech Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     
     <style>
@@ -175,10 +176,17 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 229, 255, 0.3);
         }
 
-        /* Signature */
+        /* Signature - Size updated for soumikde_1 */
         .signature-box { text-align: right; margin-top: 20px; width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 15px; }
         .sig-text { font-family: 'Poppins', sans-serif; font-size: 0.8rem; color: #888888; text-transform: uppercase; letter-spacing: 3px; display: block; }
-        .sig-name { font-family: 'Dancing Script', cursive; font-size: clamp(2rem, 6vw, 2.6rem); color: #a1c4fd; display: block; margin-top: 2px; text-shadow: 0 0 15px rgba(161, 196, 253, 0.3); }
+        .sig-name { 
+            font-family: 'Dancing Script', cursive; /* Beautiful handwritten font */
+            font-size: clamp(1.4rem, 4vw, 1.8rem); /* Made the signature smaller */
+            color: #a1c4fd; 
+            display: block; 
+            margin-top: 5px; 
+            text-shadow: 0 0 15px rgba(161, 196, 253, 0.3); 
+        }
 
         /* Hearts */
         .heart { position: absolute; bottom: -10vh; color: rgba(255, 50, 100, 0.6); font-size: 1.8rem; z-index: 5; animation: floatUp linear forwards; filter: drop-shadow(0 0 5px rgba(255,0,0,0.5)); }
@@ -253,13 +261,13 @@
         <div id="hbText" class="hidden">
             <div class="cake-container">
                 <div class="flame"></div>
-                <div class="candle">25</div>
+                <div class="candle">26</div>
                 <div class="cake-tier-2"></div>
                 <div class="cake-tier-1"></div>
             </div>
             
-            Happy 25th Birthday
-            <span class="name-highlight">Avinandan</span>
+            Happy 26th Birthday
+            <span class="name-highlight">Sumana</span>
         </div>
 
         <div id="cardWrapper" class="hidden">
@@ -267,17 +275,17 @@
             <div class="card-border-anim"></div>
             
             <div id="mainWish">
-                <h1>Dear Avi Da</h1>
+                <h1>Dear Mosi Ji</h1>
                 <p id="typedWish"></p>
 
                 <div id="expandableSection">
                     <div id="imgContainer">
-                        <img id="birthdayImage" crossorigin="anonymous" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/soumikde-1/secrect-A/main/photo_2026-07-10_11-19-40.jpg" alt="Avi Da">
+                        <img id="birthdayImage" crossorigin="anonymous" referrerpolicy="no-referrer" src="https://raw.githubusercontent.com/soumikde-1/secrect-A/main/photo_2026-07-21_20-34-40.jpg" alt="Sumana">
                     </div>
 
                     <div class="signature-box">
-                        <span class="sig-text">wish from your brother</span>
-                        <span class="sig-name">Soumik</span>
+                        <span class="sig-text">WISH FROM</span>
+                        <span class="sig-name">soumikde_1</span>
                     </div>
                 </div>
             </div>
@@ -345,7 +353,8 @@
         // --- 100% ACCURATE KOLKATA TIME CALCULATOR ---
         function updateCounter() {
             try {
-                const targetDobStr = new Date("2001-07-11T00:00:00+05:30").toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
+                // Date updated to 22.07.2000
+                const targetDobStr = new Date("2000-07-22T00:00:00+05:30").toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
                 const dob = new Date(targetDobStr);
                 const nowStr = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
                 const now = new Date(nowStr);
@@ -390,7 +399,8 @@
 
         const enterBtn = document.getElementById('enterBtn'), introScreenEl = document.getElementById('introScreen'), cyberBgEl = document.getElementById('cyberBg'), hbTextEl = document.getElementById('hbText'), cardWrapper = document.getElementById('cardWrapper'), bgMusic = document.getElementById('bgMusic'), glowContainer = document.getElementById('glowContainer'), typedWishEl = document.getElementById('typedWish'), expandableSection = document.getElementById('expandableSection'), actionBtns = document.getElementById('actionBtns'), countdownMsg = document.getElementById('countdownMsg'), waitSec = document.getElementById('waitSec'), balloonContainer = document.getElementById('balloonContainer');
 
-        const wishTextString = "Wishing you a very Happy Birthday! 🎉🎂\n\nMay your special day be filled with endless happiness, love, laughter, and unforgettable memories. May you be blessed with good health, boundless success, and all the joy your heart desires. Keep shining, keep smiling, and may every dream you cherish come true. Wishing you a wonderful year ahead filled with new opportunities, beautiful moments, and countless reasons to smile.\n\nHappy Birthday once again! Lots of love and best wishes! ❤️✨";
+        // New Wish Text Updated Here
+        const wishTextString = "A very Happy Birthday to you! 🎉🎂\n\nI hope your day is filled with endless laughter, love, and beautiful moments. May the year ahead bless you with good health, boundless success, and all the happiness you truly deserve.\n\nKeep inspiring everyone with your bright smile. Wishing you the absolute best today and always! ❤️✨";
         const wishChars = Array.from(wishTextString);
 
         enterBtn.addEventListener('click', () => {
@@ -410,7 +420,8 @@
             introScreenEl.classList.remove('hidden'); introScreenEl.classList.add('fade-in');
             updateCounter(); timerInterval = setInterval(updateCounter, 1000);
             
-            await typeText('introText1', "Hey ! Avinandan", 70);
+            // Name updated to Sumana
+            await typeText('introText1', "Hey ! Sumana", 70);
             await typeText('introText2', "welcome to your special hacking Birthday wish", 50);
             await typeText('introText3', "You make this world beautiful for", 50);
 
@@ -433,7 +444,8 @@
         function startBalloons() {
             balloonCount = 1; balloonContainer.innerHTML = '';
             balloonInterval = setInterval(() => {
-                if(balloonCount > 25) { clearInterval(balloonInterval); return; }
+                // Balloon limit updated to 26
+                if(balloonCount > 26) { clearInterval(balloonInterval); return; }
                 createBalloon(balloonCount); balloonCount++;
             }, 500); 
         }
@@ -441,17 +453,17 @@
         function createBalloon(num) {
             const b = document.createElement('div'); b.classList.add('balloon');
             
-            if(num === 25) { 
+            // Checking for the 26th balloon to make it huge
+            if(num === 26) { 
                 b.classList.add('huge-balloon'); hugeBalloon = b; 
             } else {
-                // Serial Grid Alignment (Ara ari bhabe set kora)
                 let cols = window.innerWidth > 600 ? 8 : 4; 
                 let colIndex = (num - 1) % cols;
                 let percentageSpacing = 100 / cols;
                 let leftPos = (colIndex * percentageSpacing) + (percentageSpacing / 2);
                 
                 b.style.left = leftPos + '%';
-                b.style.setProperty('--offsetX', '-50%'); // Align center to left percentage
+                b.style.setProperty('--offsetX', '-50%');
             }
             
             b.innerText = num; b.style.backgroundColor = `hsl(${Math.random() * 360}, 80%, 55%)`;
@@ -459,13 +471,13 @@
 
             setTimeout(() => {
                 let targetY;
-                if(num === 25) {
+                if(num === 26) {
                     targetY = -(window.innerHeight - 180);
                     b.style.transform = `translateY(${targetY}px) translateX(-50%)`;
                 } else {
                     let cols = window.innerWidth > 600 ? 8 : 4;
                     let rowIndex = Math.floor((num - 1) / cols);
-                    let topMargin = rowIndex * 75 + 75; // Creates grid rows
+                    let topMargin = rowIndex * 75 + 75; 
                     targetY = -(window.innerHeight - topMargin);
                     b.style.transform = `translateY(${targetY}px) translateX(-50%)`;
                 }
@@ -473,16 +485,14 @@
             }, 50);
         }
 
-        // --- INSTANT BLACK SCREEN & FIREWORKS ON POP ---
         function popHugeBalloonAndTransition() {
             if(hugeBalloon) {
                 let rect = hugeBalloon.getBoundingClientRect();
                 let centerX = rect.left + rect.width / 2;
                 let centerY = rect.top + rect.height / 2;
                 
-                hugeBalloon.style.display = 'none'; // Instant pop
+                hugeBalloon.style.display = 'none'; 
                 
-                // Create firework particles
                 for(let i = 0; i < 40; i++) {
                     let spark = document.createElement('div');
                     spark.style.position = 'fixed';
@@ -493,7 +503,7 @@
                     spark.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 60%)`;
                     spark.style.borderRadius = '50%';
                     spark.style.boxShadow = `0 0 10px ${spark.style.backgroundColor}`;
-                    spark.style.zIndex = '9999'; // Highest Z-index for sparks
+                    spark.style.zIndex = '9999'; 
                     document.body.appendChild(spark);
 
                     let angle = Math.random() * Math.PI * 2;
@@ -510,7 +520,6 @@
                 }
             }
             
-            // Instantly hide old interface
             introScreenEl.classList.add('hidden');
             cyberBgEl.classList.remove('active-cyber');
             balloonContainer.innerHTML = '';
@@ -519,15 +528,13 @@
             clearInterval(timerInterval);
             clearInterval(particleInterval);
             
-            // 0.5 sec Black Background Overlay
             const blackScreen = document.createElement('div');
             blackScreen.style.position = 'fixed';
             blackScreen.style.inset = '0';
             blackScreen.style.backgroundColor = '#000000';
-            blackScreen.style.zIndex = '9000'; // Right below the fireworks
+            blackScreen.style.zIndex = '9000'; 
             document.body.appendChild(blackScreen);
             
-            // Instantly transition after 0.5s flash
             setTimeout(() => {
                 blackScreen.remove();
                 transitionToAesthetic();
@@ -536,7 +543,7 @@
 
         function transitionToAesthetic() {
             heartInterval = setInterval(createHeart, 600);
-            showHappyBirthday(); // No extra delays, instantly enters 3rd page
+            showHappyBirthday(); 
         }
 
         function createHeart() {
@@ -550,7 +557,7 @@
             setTimeout(() => {
                 hbTextEl.classList.replace('fade-in', 'fade-out');
                 setTimeout(() => { hbTextEl.classList.add('hidden'); showMainWish(); }, 1000);
-            }, 4500); // Wait a bit longer so they can see the cake
+            }, 4500); 
         }
 
         function showMainWish() {
